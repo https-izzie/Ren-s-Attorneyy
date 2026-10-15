@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rens Attorney | Premier Legal Practice &mdash; Abuja, Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════ NAVBAR ════════════ -->
+<nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo"><span class="num">Rens</span> Attorney</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#practice">Practice Areas</a></li>
+        <li><a href="#fee">Consultation Fee</a></li>
+        <li><a href="#complaint">File a Case</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#complaint" class="nav-cta">Get Legal Help</a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+        <li><a href="#practice" onclick="toggleMobileMenu()">Practice Areas</a></li>
+        <li><a href="#fee" onclick="toggleMobileMenu()">Consultation Fee</a></li>
+        <li><a href="#complaint" onclick="toggleMobileMenu()">File a Case</a></li>
+        <li><a href="#reviews" onclick="toggleMobileMenu()">Reviews</a></li>
+        <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+    </ul>
+</div>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <!-- Scales of justice watermark -->
+    <svg class="hero-watermark" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <circle cx="110" cy="20" r="7" fill="#C8962A"/>
+        <line x1="110" y1="27" x2="110" y2="230" stroke="#C8962A" stroke-width="3.5"/>
+        <line x1="35" y1="70" x2="185" y2="70" stroke="#C8962A" stroke-width="3.5"/>
+        <path d="M35 70 L10 130 L60 130 Z" stroke="#C8962A" stroke-width="2" fill="none"/>
+        <path d="M185 70 L160 130 L210 130 Z" stroke="#C8962A" stroke-width="2" fill="none"/>
+        <ellipse cx="35" cy="70" rx="6" ry="6" fill="#C8962A"/>
+        <ellipse cx="185" cy="70" rx="6" ry="6" fill="#C8962A"/>
+        <rect x="90" y="228" width="40" height="10" rx="2" fill="#C8962A"/>
+        <line x1="80" y1="245" x2="140" y2="245" stroke="#C8962A" stroke-width="4"/>
+    </svg>
+    <div class="hero-content">
+        <div class="hero-eyebrow">Est. 2010 — Area 1, Garki, Abuja · FCT Nigeria</div>
+        <h1 class="hero-title">
+            <span class="num">Rens</span><br>Attorney
+        </h1>
+        <p class="hero-subtitle">Justice without borders. Elite legal representation across all 36 states — available to every Nigerian, wherever they stand.</p>
+        <div class="hero-actions">
+            <a href="#complaint" class="btn btn-gold">File Your Case</a>
+            <a href="#practice" class="btn btn-outline">Our Practice Areas</a>
+        </div>
+        <div class="hero-stats">
+            <div><div class="stat-number">15+</div><div class="stat-label">Years in Practice</div></div>
+            <div><div class="stat-number">2,400+</div><div class="stat-label">Cases Handled</div></div>
+            <div><div class="stat-number">4</div><div class="stat-label">Office Locations</div></div>
+            <div><div class="stat-number">10+</div><div class="stat-label">Practice Areas</div></div>
+            <div><div class="stat-number">36</div><div class="stat-label">States Covered</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ TICKER ════════════ -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+        <span class="ticker-item">Family Law</span>
+        <span class="ticker-item">Land &amp; Property Law</span>
+        <span class="ticker-item">Immigration Law</span>
+        <span class="ticker-item">Technology Law</span>
+        <span class="ticker-item">Corporate &amp; Commercial</span>
+        <span class="ticker-item">Criminal Defense</span>
+        <span class="ticker-item">Intellectual Property</span>
+        <span class="ticker-item">Oil, Gas &amp; Energy</span>
+        <span class="ticker-item">Dispute Resolution</span>
+        <span class="ticker-item">Constitutional Law</span>
+        <span class="ticker-item">Human Rights</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item">Family Law</span>
+        <span class="ticker-item">Land &amp; Property Law</span>
+        <span class="ticker-item">Immigration Law</span>
+        <span class="ticker-item">Technology Law</span>
+        <span class="ticker-item">Corporate &amp; Commercial</span>
+        <span class="ticker-item">Criminal Defense</span>
+        <span class="ticker-item">Intellectual Property</span>
+        <span class="ticker-item">Oil, Gas &amp; Energy</span>
+        <span class="ticker-item">Dispute Resolution</span>
+        <span class="ticker-item">Constitutional Law</span>
+        <span class="ticker-item">Human Rights</span>
+    </div>
+</div>
+
+<!-- ════════════ ABOUT ════════════ -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="reveal">
+                <span class="section-label">About the Firm</span>
+                <h2 class="section-title">Legal Excellence<br>Built in Abuja,<br><em>Felt Across Nigeria</em></h2>
+                <div class="divider"></div>
+                <p>Founded in 2010, Rens Attorney began with two visionary lawyers who left their previous engagements to build something different — a law firm where results, not reputation alone, define success. From a modest practice, we have grown into a full-service firm headquartered at 10 Optimum Hotel, Area 1, Garki, Abuja.</p>
+                <p>Today, we have established branches in Lagos, Port Harcourt, and Aberdeen, Scotland. Our reach is genuinely national: any Nigerian citizen across all 36 states can access our legal services remotely, without the burden of travelling to Abuja.</p>
+                <p>We attract top-level transactional and litigation work from individuals, corporations, and government bodies, guided by our collegiate culture, innovation, and a relentless commitment to results. We also proudly maintain pro bono services for qualifying indigent members of the public.</p>
+                <div class="about-tags">
+                    <span class="about-tag">NBA Registered</span>
+                    <span class="about-tag">Pro Bono Service</span>
+                    <span class="about-tag">Remote Consultations</span>
+                    <span class="about-tag">International Practice</span>
+                    <span class="about-tag">Nationwide Coverage</span>
+                </div>
+            </div>
+            <div class="reveal d2">
+                <div class="about-card">
+                    <p class="card-quote">Law is the witness and external deposit of our moral life. Its history is the history of the moral development of the race.</p>
+                    <div class="card-attrib">Oliver Wendell Holmes Jr.</div>
+                    <div class="card-stats">
+                        <div><div class="cs-num">Abuja</div><div class="cs-label">Headquarters</div></div>
+                        <div><div class="cs-num">3+</div><div class="cs-label">Branch Offices</div></div>
+                        <div><div class="cs-num">2010</div><div class="cs-label">Year Founded</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ PRACTICE AREAS ════════════ -->
+<section class="practice section" id="practice">
+    <div class="container">
+        <div class="practice-intro reveal">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">Our <em>Practice</em> Areas</h2>
+            <div class="divider"></div>
+            <p>From family disputes to frontier technology law, our barristers carry deep statutory expertise across ten distinct areas of Nigerian and international legal practice.</p>
+        </div>
+        <div class="practice-grid">
+            <div class="practice-item reveal">
+                <span class="p-icon"></span>
+                <div class="p-name">Family Law</div>
+                <p class="p-desc">Divorce and separation, child custody and access, adoption proceedings, matrimonial property, spousal maintenance, and domestic relations — handled with sensitivity and precision.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d1">
+                <span class="p-icon"></span>
+                <div class="p-name">Land &amp; Property Law</div>
+                <p class="p-desc">Title investigations, conveyancing, landlord-tenant disputes, compulsory acquisition, land use matters, and commercial property transactions across all Nigerian states.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d2">
+                <span class="p-icon"></span>
+                <div class="p-name">Immigration Law</div>
+                <p class="p-desc">Visa applications, work and residency permits, citizenship by naturalization, deportation defense, refugee matters, and corporate expatriate immigration management.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d3">
+                <span class="p-icon"></span>
+                <div class="p-name">Technology Law</div>
+                <p class="p-desc">Cyber law, data protection and NDPR compliance, fintech regulation, software licensing, e-commerce disputes, digital contracts, and emerging blockchain and AI matters.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal">
+                <span class="p-icon"></span>
+                <div class="p-name">Corporate &amp; Commercial</div>
+                <p class="p-desc">Company incorporation, mergers and acquisitions, joint ventures, commercial contracts, corporate restructuring, governance advisory, and regulatory compliance.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d1">
+                <span class="p-icon"></span>
+                <div class="p-name">Criminal Defense</div>
+                <p class="p-desc">Pre-trial bail applications, trial representation before all courts, white-collar crime defense, asset tracing, and post-conviction appeals to the Court of Appeal and Supreme Court.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d2">
+                <span class="p-icon"></span>
+                <div class="p-name">Intellectual Property</div>
+                <p class="p-desc">Trademark registration and enforcement, patent and design filings, copyright protection, brand infringement litigation, licensing agreements, and IP due diligence.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d3">
+                <span class="p-icon"></span>
+                <div class="p-name">Oil, Gas &amp; Energy</div>
+                <p class="p-desc">Upstream and downstream transactions, NUPRC regulatory licensing, JOA and PSC drafting, environmental compliance, and host community engagement agreements.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal">
+                <span class="p-icon"></span>
+                <div class="p-name">Dispute Resolution &amp; Arbitration</div>
+                <p class="p-desc">Commercial arbitration before Lagos Court of Arbitration and ICC, mediation, and structured ADR processes — delivering fast, confidential resolution for businesses and individuals.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+            <div class="practice-item reveal d1">
+                <span class="p-icon"></span>
+                <div class="p-name">Constitutional &amp; Human Rights</div>
+                <p class="p-desc">Fundamental rights enforcement under the 1999 Constitution, judicial review, electoral petitions, administrative law challenges, and public interest litigation of national importance.</p>
+                <a href="#complaint" class="p-link">Consult a Lawyer</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="fee section" id="fee">
+    <div class="container">
+        <div style="text-align:center;max-width:540px;margin:0 auto 52px;" class="reveal">
+            <span class="section-label">Transparent Pricing</span>
+            <h2 class="section-title">Consultation <em>Fee</em></h2>
+            <div class="divider" style="margin-left:auto;margin-right:auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);width:80px;"></div>
+        </div>
+        <div class="fee-wrapper">
+            <div class="fee-card reveal">
+                <div class="fee-badge">Initial Legal Consultation</div>
+                <div class="fee-amount"id="feeNgn">₦65,000</div>
+                <div class="fee-usd">Approximately <strong id="feeUsd">$41 USD</strong> &nbsp;·&nbsp; One-time fee</div>
+                <p class="fee-desc">Your consultation fee grants you direct access to a qualified barrister who will thoroughly assess your legal matter. No hidden charges. No surprises. Remote consultations available for clients across all 36 Nigerian states — you don't need to travel to us.</p>
+                <div class="fee-checklist">
+                    <div class="fee-check">Full case evaluation</div>
+                    <div class="fee-check">Expert legal opinion</div>
+                    <div class="fee-check">30–60 min barrister session</div>
+                    <div class="fee-check">Strategy recommendation</div>
+                    <div class="fee-check">Written summary brief</div>
+                    <div class="fee-check">Remote or in-person</div>
+                </div>
+                <a href="#complaint" class="btn btn-gold">Book Your Consultation</a>
+                <p class="fee-note">Pro bono services available for qualifying indigent clients. <a href="#contact">Contact us</a> to enquire.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="quotes-section">
+    <div class="container">
+        <div class="quote-inner">
+            <div class="q-label">Words of the Law</div>
+            <p class="q-text" id="quoteText">"The good lawyer is not the man who qualifies all his qualifications, but who throws himself on your part so heartily that he can get you out of a scrape."</p>
+            <div class="q-author" id="quoteAuthor">— Ralph Waldo Emerson</div>
+            <div class="q-dots" id="quoteDots"></div>
+        </div>
+    </div>
+    <div class="q-progress" id="quoteProgress"></div>
+</div>
+
+<section class="complaint section" id="complaint">
+    <div class="container">
+        <div class="complaint-grid">
+            <!-- LEFT: Intro -->
+            <div class="reveal">
+                <span class="section-label">File Your Case</span>
+                <h2 class="section-title">Tell Us Your<br><em>Legal Matter</em></h2>
+                <div class="divider"></div>
+                <p>You do not have to travel to Abuja to access elite legal representation. Submit your case details securely from anywhere in Nigeria — our team reviews every submission within 24 hours and reaches out directly.</p>
+                <p>All information shared is protected by strict attorney-client confidentiality. Attaching relevant documents helps our lawyers give you a more accurate and thorough assessment of your matter.</p>
+                <p>Once received, a qualified barrister will be assigned to your case category and will contact you to schedule your formal consultation.</p>
+                <div class="response-box">
+                    <div class="rb-label">Guaranteed Response Time</div>
+                    <div class="rb-value">24 Hours</div>
+                    <div class="rb-note">Every submission receives a personal response</div>
+                </div>
+            </div>
+            <!-- RIGHT: Form -->
+            <div class="reveal d2">
+                <form id="caseForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Your last name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+234 800 000 0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">State of Residence *</label>
+                        <select class="form-control" id="state" required>
+                            <option value="" disabled selected>Select your state</option>
+                            <option>Abia</option><option>Adamawa</option><option>Akwa Ibom</option>
+                            <option>Anambra</option><option>Bauchi</option><option>Bayelsa</option>
+                            <option>Benue</option><option>Borno</option><option>Cross River</option>
+                            <option>Delta</option><option>Ebonyi</option><option>Edo</option>
+                            <option>Ekiti</option><option>Enugu</option><option>FCT — Abuja</option>
+                            <option>Gombe</option><option>Imo</option><option>Jigawa</option>
+                            <option>Kaduna</option><option>Kano</option><option>Katsina</option>
+                            <option>Kebbi</option><option>Kogi</option><option>Kwara</option>
+                            <option>Lagos</option><option>Nasarawa</option><option>Niger</option>
+                            <option>Ogun</option><option>Ondo</option><option>Osun</option>
+                            <option>Oyo</option><option>Plateau</option><option>Rivers</option>
+                            <option>Sokoto</option><option>Taraba</option><option>Yobe</option>
+                            <option>Zamfara</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Practice Area *</label>
+                        <select class="form-control" id="area" required>
+                            <option value="" disabled selected>Select a practice area</option>
+                            <option>Family Law</option>
+                            <option>Land &amp; Property Law</option>
+                            <option>Immigration Law</option>
+                            <option>Technology Law</option>
+                            <option>Corporate &amp; Commercial Law</option>
+                            <option>Criminal Defense</option>
+                            <option>Intellectual Property</option>
+                            <option>Oil, Gas &amp; Energy</option>
+                            <option>Dispute Resolution / Arbitration</option>
+                            <option>Constitutional &amp; Human Rights</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Consultation *</label>
+                        <select class="form-control" id="consultType" required>
+                            <option value="" disabled selected>Select consultation type</option>
+                            <option>Video Call (Remote)</option>
+                            <option>Phone Call (Remote)</option>
+                            <option>In-Person — Abuja Office</option>
+                            <option>In-Person — Lagos Office</option>
+                            <option>In-Person — Port Harcourt Office</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Describe Your Legal Matter *</label>
+                        <textarea class="form-control" id="details" rows="5" placeholder="Briefly describe your situation — the parties involved, relevant dates, and the outcome you are seeking. All information is strictly confidential." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Attach Supporting Documents (Optional)</label>
+                        <div class="file-drop" id="fileDropZone">
+                            <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.txt,.xlsx" onchange="onFileChange(this)">
+                            <div class="fd-icon">📎</div>
+                            <div class="fd-text">Drag &amp; drop files here, or <span>click to browse</span></div>
+                            <div class="fd-hint">Accepted: PDF, DOC, DOCX, JPG, PNG, TXT &nbsp;·&nbsp; Max 10MB per file</div>
+                            <div class="fd-files" id="fileList"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="consent-row">
+                            <input type="checkbox" id="consent" required>
+                            <span>I confirm that the information provided is accurate and I consent to Rens Attorney contacting me in connection with my legal matter. I understand all communications are confidential.</span>
+                        </label>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="handleSubmit()">
+                        Submit Case &amp; Book Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews section" id="reviews">
+    <div class="container">
+        <div class="reviews-header reveal">
+            <div>
+                <span class="section-label">Client Testimonials</span>
+                <h2 class="section-title">What Our<br><em>Clients Say</em></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="reviews-score">
+                <div class="rs-num">4.9</div>
+                <div class="rs-stars">★★★★★</div>
+                <div class="rs-label">Average Rating &nbsp;·&nbsp; 200+ Reviews</div>
+            </div>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid">
+            <div class="review-card reveal">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"Rens Attorney handled my land title dispute with absolute professionalism. I was in Enugu and didn't have to travel to Abuja even once. A three-year-old case resolved in under four months."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">OA</div>
+                    <div><div class="rc-name">Obinna Achike</div><div class="rc-case">Land &amp; Property · Enugu State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+            <div class="review-card reveal d1">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"Going through a difficult divorce, I needed someone who understood both the law and my emotions. The family law team was compassionate, thorough, and kept me informed every step of the way."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">FK</div>
+                    <div><div class="rc-name">Fatima Kabiru</div><div class="rc-case">Family Law · Kano State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+            <div class="review-card reveal d2">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"As a tech startup founder, I needed expert advice on NDPR compliance and software licensing. Rens Attorney was the only Nigerian firm that truly understood our industry. Absolutely exceptional."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">TE</div>
+                    <div><div class="rc-name">Tunde Eze</div><div class="rc-case">Technology Law · Lagos State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+            <div class="review-card reveal">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"My immigration case had been pending over two years before I came to Rens Attorney. Within six months, it was fully resolved. Their knowledge of both Nigerian and international immigration law is unmatched."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">CI</div>
+                    <div><div class="rc-name">Chidinma Ikenna</div><div class="rc-case">Immigration Law · Rivers State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+            <div class="review-card reveal d1">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"Our company needed counsel for a major acquisition. The corporate team delivered meticulous due diligence, flawless documentation, and kept the negotiations firmly on track from start to close."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">AM</div>
+                    <div><div class="rc-name">Adaeze Mbachu</div><div class="rc-case">Corporate Law · Anambra State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+            <div class="review-card reveal d2">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-text">"They took my human rights case pro bono after assessing my circumstances. Their commitment to justice beyond profit is what sets Rens Attorney apart from every other firm I have encountered."</p>
+                <div class="rc-author">
+                    <div class="rc-avatar">MS</div>
+                    <div><div class="rc-name">Mohammed Sani</div><div class="rc-case">Human Rights · Sokoto State</div></div>
+                    <div class="rc-verified">✓ Verified</div>
+                </div>
+            </div>
+        </div>
+        <div class="reveal" style="max-width:640px;margin:60px auto 0;">
+    <h3 class="section-title">Leave a <em>Review</em></h3>
+    <form id="reviewForm" novalidate>
+        <div class="form-row">
+            <div class="form-group">
+                <label class="form-label">Your Name *</label>
+                <input type="text" class="form-control" id="revName" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Rating *</label>
+                <select class="form-control" id="revRating">
+                    <option value="" disabled selected>Select rating</option>
+                    <option value="5">★★★★★ (5)</option>
+                    <option value="4">★★★★ (4)</option>
+                    <option value="3">★★★ (3)</option>
+                    <option value="2">★★ (2)</option>
+                    <option value="1">★ (1)</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Case Type &amp; State (optional)</label>
+            <input type="text" class="form-control" id="revCase" placeholder="e.g. Family Law · Kano State">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Your Review *</label>
+            <textarea class="form-control" id="revComment" rows="4" placeholder="Tell us about your experience"></textarea>
+        </div>
+        <button type="button" class="submit-btn" onclick="submitReview()">Submit Review</button>
+    </form>
+</div>
+    </div>
+</section>
+
+<!-- ════════════ CONTACT ════════════ -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <div style="max-width:540px;margin-bottom:60px;" class="reveal">
+            <span class="section-label">Find Us</span>
+            <h2 class="section-title">Our <em>Office</em></h2>
+            <div class="divider"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="reveal">
+                <div class="ci-item">
+                    <div class="ci-icon"></div>
+                    <div>
+                        <div class="ci-label">Headquarters</div>
+                        <div class="ci-value">10 Optimum Hotel, Area 1<br>Garki, Federal Capital Territory, Abuja<br>Nigeria</div>
+                    </div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"></div>
+                    <div>
+                        <div class="ci-label">Phone</div>
+                        <div class="ci-value">
+                            <a href="tel:+2349010002400">+234 (0) 901 000 2400</a><br>
+                            <a href="tel:+2348001234567">+234 (0) 800 123 4567</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"></div>
+                    <div>
+                        <div class="ci-label">Email</div>
+                        <div class="ci-value">
+                            <a href="mailto:info@rensattorney.ng">info@rensattorney.ng</a><br>
+                            <a href="mailto:consultations@rensattorney.ng">consultations@rensattorney.ng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"></div>
+                    <div>
+                        <div class="ci-label">Office Hours</div>
+                        <div class="ci-value">Monday – Friday: 8:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 1:00 PM<br>Online submissions: Open 24 / 7</div>
+                    </div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"></div>
+                    <div>
+                        <div class="ci-label">Branch Offices</div>
+                        <div class="ci-value">Lagos &nbsp;·&nbsp; Port Harcourt &nbsp;·&nbsp; Aberdeen, Scotland</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal d2">
+                <iframe
+                    class="map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.52!2d7.4892!3d9.0438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b6e00000001%3A0x000000000000001!2sGarki%20Area%201%2C%20Abuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Rens Attorney — 10 Optimum Hotel, Area 1, Garki, Abuja">
+                </iframe>
+                <div class="remote-box">
+                    <div class="remote-box-title">Can't Visit in Person?</div>
+                    <p>Our remote consultation platform ensures no Nigerian is denied access to justice because of distance. <a href="#complaint">Submit your case online</a> — our team will reach out within 24 hours, wherever you are in the country.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-logo"><span class="num">Rens</span> Attorney</div>
+            <div class="footer-copy">
+                © 2025 Rens Attorney. All Rights Reserved.&nbsp;
+                <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+                <a href="#">Terms of Use</a> &nbsp;·&nbsp;
+                <a href="#">Disclaimer</a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#practice">Practice</a>
+                <a href="#fee">Fees</a>
+                <a href="#complaint">File Case</a>
+                <a href="#contact">Contact</a>
+                <a href="http://rensattorneyy.site.je/login.php"staff login></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

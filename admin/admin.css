@@ -1,0 +1,105 @@
+:root {
+  --black: #0d0b09;
+  --panel: #17130f;
+  --coffee: #3b2a1e;
+  --gold: #d4af37;
+  --text: #efe8dc;
+  --muted: #a79b8a;
+  --line: #2c2219;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: var(--black);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1 { color: var(--gold); margin: 0; letter-spacing: 1px; }
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Top bar ---- */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--gold);
+}
+.top small, .top div { color: var(--muted); }
+
+/* ---- Table ---- */
+.table-wrap {
+  overflow-x: auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+table { border-collapse: collapse; width: 100%; min-width: 900px; }
+th {
+  background: var(--coffee);
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 12px;
+}
+td {
+  padding: 12px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+  font-size: 14px;
+}
+tr:hover td { background: #1d1711; }
+td small { color: var(--muted); }
+.msg { max-width: 320px; white-space: pre-wrap; }
+
+/* Coloured edge by status */
+tr.status-new td:first-child       { border-left: 4px solid var(--gold); }
+tr.status-contacted td:first-child { border-left: 4px solid #4a90d9; }
+tr.status-scheduled td:first-child { border-left: 4px solid #8e63c9; }
+tr.status-closed td:first-child    { border-left: 4px solid #4a8f5a; }
+
+/* ---- Form controls ---- */
+select, input[type=email], input[type=password] {
+  background: var(--black);
+  color: var(--text);
+  border: 1px solid var(--coffee);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+}
+button {
+  background: var(--gold);
+  color: var(--black);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #e6c35a; }
+
+/* ---- Login page ---- */
+.login-box {
+  max-width: 380px;
+  margin: 10vh auto 0;
+  padding: 32px;
+  background: var(--panel);
+  border: 1px solid var(--coffee);
+  border-top: 3px solid var(--gold);
+  border-radius: 6px;
+  text-align: center;
+}
+.login-box h1 { margin-bottom: 20px; font-size: 24px; }
+.login-box input { width: 100%; margin-bottom: 14px; }
+.login-box button { width: 100%; padding: 12px; }
+.error { color: #ff7b7b; margin-bottom: 14px; }
